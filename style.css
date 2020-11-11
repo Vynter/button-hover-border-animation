@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layout {
+    background: rgb(48, 0, 48);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 5px 15px;
+    margin: 10px;
+    color: white;
+    background: rgb(63, 25, 63);
+    border: 1px solid rgb(63, 25, 63);
+    transition: 1.9s;
+}
+
+button:hover {
+    animation: hoverme 5s infinite;
+}
+
+@keyframes hoverme {
+    0% {
+        border-top: 1px white solid;
+    }
+    20% {
+        border-right: 1px white solid;
+    }
+    40% {
+        border-bottom: 1px white solid;
+    }
+    60% {
+        border-left: 1px white solid;
+    }
+    80% {
+        border-top: 1px white solid;
+        color: rgb(63, 25, 63);
+    }
+    100% {
+        background: white;
+    }
+}
